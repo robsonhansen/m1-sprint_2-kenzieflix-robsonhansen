@@ -17,7 +17,6 @@ body {
 
     max-width: 228px;
     height: 68px;
-
 }
 
 .container__flex {
@@ -27,14 +26,17 @@ body {
     justify-content: center;
     margin: 0 auto;
 }
+
 .container__titulo {
     font-family: 'IBM Plex Sans', sans-serif;
     font-size: 32px;
     margin-bottom: 61px;
 }
+
 .container__secao {
     width: 100%;
 }
+
 .container__secao ul {
     display: flex;
     gap: 26px;
@@ -43,21 +45,29 @@ body {
 }
 .secao__perfil img{
     border-radius: 10px;
-    transition: border 500ms;
 
     cursor: pointer;
+    box-shadow: 0 0 0 0 lightblue;
+    box-sizing: border-box;
+    transition: box-shadow 0.3s;
 }
+
 .secao__perfil img:hover{
- 
+    box-shadow: 0 0 0 5px lightgrey;
 }
+
 .secao__perfil p{
     font-family: 'IBM Plex Sans', sans-serif;
+    color: #9C9C9C;
     font-size: 16px;
     font-weight: 500;
-    margin-top: 10px;
-
-    
+    margin-top: 10px;  
 }
+
+.secao__perfil--add img:hover{
+    background-image: url('../img/Frame5.png');
+}
+
 .container__botao{
     display: flex;
     justify-content: center;
@@ -66,6 +76,7 @@ body {
     margin: 136px auto 0 auto;
 
 }
+
 .gerenciar__perfil{
     width: 206px;
     height: 50px;
